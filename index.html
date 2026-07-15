@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jessica C - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="main-page">
+<!-- Header -->
+<header>
+  <a href="index.html" class="logo">Jessica C</a>
+
+  <!-- table nav -->
+  <nav class="desktop-nav" aria-label="Primary">
+    <ul>
+      <li><a href="index.html">Main</a></li>
+      <li><a href="#projects">Works</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <input type="checkbox" id="menu-toggle" class="nav-toggle" aria-controls="mobileMenu" aria-label="Open menu" />
+  <label for="menu-toggle" class="hamburger" >☰</label>
+
+  <nav id="mobileMenu" class="mobile-menu">
+    <ul>
+      <li><a href="index.html">Main</a></li>
+      <li><a href="#projects">Works</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+  <h1 class="playground-title">
+    Welcome to Jessica’s <br>
+    <a href="#projects" class="highlight-link">Graphic playground→</a>
+
+  </h1>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="projects">
+  <h2 class="sr-only">Projects</h2>
+
+  <!-- Project 1 -->
+  <a href="dessert-simulator.html" class="project">
+    <img
+      src="images/dessert.png"
+      alt="Dessert Simulator UI"
+    >
+    <h3>Dessert Simulator – Game UI &amp; Visual Identity</h3>
+  </a>
+
+  <!-- Project 2 -->
+  <a href="unibazaar.html" class="project">
+    <img
+      src="images/unibazaar-cover.png"
+      alt="UniBazaar Campus Marketplace App"
+    >
+    <h3>UniBazaar – Campus Marketplace App</h3>
+  </a>
+
+  <a href="animated-illustrations.html" class="project">
+  <img
+    src="images/animated-illustrations-cover.png"
+    alt="Animated illustration and motion design work"
+  >
+  <h3>Animated Illustrations – Studio Motion Work</h3>
+</a>
+
+  <!-- Project 3 -->
+  <a href="7rings.html" class="project">
+    <img
+      src="images/7rings.png"
+      alt="7 Rings Motion Graphics"
+    >
+    <h3>7 Rings – Motion Graphics</h3>
+  </a>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="contact-info">
+    <h2>Let’s Talk!</h2>
+  </div>
+
+  <form>
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" placeholder="Enter your email">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something..."></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Jessica C. All rights reserved.</p>
+</footer>
+
+
+<script src="hamburger.js"></script>
+
+

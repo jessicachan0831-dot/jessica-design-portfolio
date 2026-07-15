@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>UniBazaar – Campus Marketplace App | Jessica C</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dessert-page unibazaar-page">
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">Jessica C</a>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Main</a></li>
+        <li><a href="index.html#projects">Works</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="nav-toggle"
+      aria-controls="mobileMenu"
+      aria-label="Open menu"
+    />
+
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile">
+      <ul>
+        <li><a href="index.html">Main</a></li>
+        <li><a href="index.html#projects">Works</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Project Introduction -->
+  <section class="intro">
+
+    <h1>UniBazaar – Campus Marketplace App</h1>
+
+    <p>
+      UniBazaar is a location-based mobile marketplace designed for university
+      students to buy and sell second-hand items within their campus community.
+      The app combines browsing, item posting, favourites, real-time chat,
+      nearby maps, and user profiles into one simple and approachable
+      experience.
+    </p>
+
+    <div class="hero-visual">
+
+      <img
+        src="images/unibazaar-cover.png"
+        alt="A collection of UniBazaar mobile app interface screens"
+      />
+
+      <div class="project-info">
+        <p>UI/UX &amp; Mobile Product Design</p>
+        <p>Visual Design, User Flows, Interface System</p>
+        <p>React Native, Expo, Firebase</p>
+        <p>Two-Person Team · 2026</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Main Project Content -->
+  <section class="yellow-bg">
+
+    <!-- YouTube Video Button -->
+  <div class="links">
+    <a
+      class="visit"
+      href="https://www.youtube.com/shorts/5bUl8eDWaZQ"
+      target="_blank"
+      rel="noopener"
+    >
+      Watch the Video
+    </a>
+  </div>
+
+    <!-- Project Overview and My Role -->
+    <div class="storyboard">
+
+  <video
+    class="storyboard-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    poster="images/unibazaar-auth.png"
+  >
+    <source
+      src="videos/unibazaar-loginpreview.mp4"
+      type="video/mp4"
+    >
+    Your browser does not support the video tag.
+  </video>
+
+      <div class="story-text">
+
+        <h2>Project Overview &amp; My Role</h2>
+
+        <p>
+          UniBazaar was developed as a two-person team project with Carolyn Fan.
+          I focused on the UI/UX and visual design of the app, including the
+          colour system, typography, page layouts, visual hierarchy, component
+          consistency, and the overall look and feel across the interface.
+        </p>
+
+        <p>
+          We worked together to plan the app structure and user flows. Together,
+          we decided how students would move from signing in, browsing listings,
+          viewing an item, and contacting a seller. We also collaborated
+          throughout the project to refine interactions and connect the
+          different features into one consistent experience.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- Design Goals -->
+    <h2 class="section-title">Design Goals</h2>
+
+    <p class="ui-description">
+      The main design challenge was organizing many different features without
+      making the app feel complicated. I wanted the interface to feel friendly
+      and approachable for students while still communicating trust and clarity
+      for peer-to-peer transactions.
+    </p>
+
+    <p class="ui-description">
+      The interface uses a clean white background, dark navy text, and a warm
+      orange accent for important actions. Rounded cards, simple icons, and
+      consistent spacing create a softer visual style. Primary actions such as
+      posting an item, searching, and sending a message are emphasized so users
+      can quickly understand what to do next.
+    </p>
+
+
+    <!-- User Flow -->
+    <div class="outcome">
+
+      <h2>Core User Flow</h2>
+
+      <p>
+        A student begins by creating an account or signing in. They can then
+        browse and search campus listings, open an item to view its details, and
+        either add it to their favourites or start a real-time conversation
+        with the seller.
+      </p>
+
+      <p>
+        Students can also create their own listing, view nearby users and items
+        on a map, and manage their profile, favourites, listed items, purchased
+        items, and transaction history.
+      </p>
+
+    </div>
+
+
+    <!-- Core App Screens -->
+    <h2 id="core-screens-title" class="tools-title">
+      Core App Screens
+    </h2>
+
+    <section
+      class="ui-screens"
+      aria-labelledby="core-screens-title"
+    >
+
+      <img
+        src="images/unibazaar-home.png"
+        alt="UniBazaar home screen with search, categories, weather, and listings"
+      />
+
+      <img
+        src="images/unibazaar-post.png"
+        alt="UniBazaar form for posting a second-hand item"
+      />
+
+      <img
+        src="images/unibazaar-map.png"
+        alt="UniBazaar map showing nearby campus users and items"
+      />
+
+      <img
+        src="images/unibazaar-chat.png"
+        alt="UniBazaar real-time buyer and seller chat screen"
+      />
+
+    </section>
+
+
+    <!-- Browse and Search -->
+    <p class="ui-description">
+
+      <strong>Browse &amp; Search:</strong>
+
+      The home screen combines a welcoming header, search bar, item categories,
+      contextual weather information, and listing cards. The visual hierarchy
+      helps students scan the page quickly without making the interface feel
+      crowded.
+
+    </p>
+
+
+    <!-- Post an Item -->
+    <p class="ui-description">
+
+      <strong>Post an Item:</strong>
+
+      The posting flow groups the item title, price, category, condition,
+      description, and photo options into one clear form. The orange action
+      button creates a strong visual endpoint and makes the task easy to
+      follow.
+
+    </p>
+
+
+    <!-- Near Me -->
+    <p class="ui-description">
+
+      <strong>Near Me:</strong>
+
+      The map gives the marketplace a campus-specific purpose by helping users
+      understand where nearby sellers and items are located. Location and
+      weather information can also help students plan an in-person exchange.
+
+    </p>
+
+
+    <!-- Chat -->
+    <p class="ui-description">
+
+      <strong>Chat:</strong>
+
+      Real-time messaging allows buyers and sellers to discuss an item and
+      arrange a meeting without leaving the app. Familiar message styling makes
+      the interaction immediately understandable.
+
+    </p>
+
+
+    <!-- Profile and Personalisation -->
+    <h2 class="section-title">
+      Profile &amp; Personalisation
+    </h2>
+
+    <div class="ui-evolution">
+
+      <img
+        src="images/unibazaar-profile.png"
+        alt="UniBazaar profile page and avatar selection"
+      />
+
+      <img
+        src="images/unibazaar-favourites.png"
+        alt="UniBazaar favourites page"
+      />
+
+    </div>
+
+    <p class="ui-description">
+      The profile area brings together the user’s buying and selling activity,
+      favourites, purchased items, listed items, and account controls.
+      Selectable avatars add a small sense of identity while keeping the visual
+      system consistent across the app.
+    </p>
+
+
+    <!-- Key Features -->
+    <div class="skills">
+
+      <h2>Key Features</h2>
+
+      <p>
+        - University email login and registration<br>
+        - Browse and search second-hand listings<br>
+        - Item posting with structured product details<br>
+        - Favourites and user profile management<br>
+        - Real-time buyer and seller chat<br>
+        - Nearby map and location-based interactions<br>
+        - Weather information for planning exchanges<br>
+        - Selectable avatars and transaction sections<br>
+      </p>
+
+    </div>
+
+
+    <!-- Design Takeaways -->
+    <div class="takeaways">
+
+      <h2>Design Takeaways</h2>
+
+      <p>
+        - A consistent component system is especially important in an app with
+        many connected screens.<br>
+
+        - Strong visual hierarchy can make a feature-heavy product feel simple
+        and approachable.<br>
+
+        - Mapping the user flow together early helped our two-person team align
+        design and development decisions.<br>
+
+        - Technical limitations can influence design choices and require the
+        team to adjust the final scope.<br>
+      </p>
+
+    </div>
+
+
+    <!-- Outcome -->
+    <div class="outcome">
+
+      <h2>Outcome</h2>
+
+      <p>
+        The final prototype delivered a polished and cohesive mobile
+        marketplace with smooth navigation across authentication, browsing,
+        posting, favourites, profiles, real-time chat, and map-based features.
+      </p>
+
+      <p>
+        This project strengthened my ability to create a consistent visual
+        system across a larger digital product and to collaborate on user flows
+        that connect design decisions with functional interactions.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Jessica C. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

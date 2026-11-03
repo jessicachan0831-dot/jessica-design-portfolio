@@ -10,19 +10,20 @@
 
   <!-- Header -->
 <header>
-  <a href="main.html" class="logo">Jessica C</a>
+  <a href="index.html" class="logo">Jessica C</a>
    <nav class="desktop-nav">
     <ul>
-      <li><a href="main.html">Main</a></li>
-      <li><a href="main.html">Works</a></li>
+      <li><a href="index.html">Main</a></li>
+      <li><a href="index.html#projects">Works</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
   </nav>
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <input type="checkbox" id="menu-toggle" class="nav-toggle" aria-controls="mobileMenu" aria-label="Open menu">
+  <label for="menu-toggle" class="hamburger">☰</label>
   <nav id="mobileMenu" class="mobile-menu">
     <ul>
-      <li><a href="main.html">Main</a></li>
-      <li><a href="main.html">Works</a></li>
+      <li><a href="index.html">Main</a></li>
+      <li><a href="index.html#projects">Works</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
   </nav>
@@ -32,13 +33,13 @@
   <section class="about">
     <div class="about-left">
       <h2>Hi, I'm <br>Jessica Chan</h2>
-      <img src="images/icon.png" alt="A cat chelf">
+      <img src="images/icon.png" alt="A cat chef">
       
     </div>
 
     <div class="about-right">
-      <h3>An graphic designer passionate about creating playful and visually cohesive digital experiences.</h3>
-      <p>Currently pursuing a degree in Interactive Arts and Technology at Simon Fraser University</strong>, 
+      <h3>A graphic designer passionate about creating playful and visually cohesive digital experiences.</h3>
+      <p>Currently pursuing a degree in Interactive Arts and Technology at Simon Fraser University, 
       I concentrate on design & development for web and mobile. My work blends UI design, illustration, and interactive development, 
       aiming to craft experiences that feel both delightful and intuitive.</p>
 
@@ -59,7 +60,7 @@
     <p>© 2025 Jessica C. All rights reserved.</p>
   </footer>
 
+<script src="hamburger.js"></script>
 </body>
 </html>
 
-<script src="hamburger.js"></script>

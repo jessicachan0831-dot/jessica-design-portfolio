@@ -137,9 +137,11 @@ header .logo::after {
 }
 
 
-.project:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 0.6rem 1.5rem rgba(0,0,0,0.2); 
+@media (hover: hover) and (pointer: fine) {
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.6rem 1.5rem rgba(0,0,0,0.16);
+  }
 }
 
 .project img {
@@ -1395,4 +1397,77 @@ footer{
   .main-page .project {
     width: 100%;
   }
+}
+
+/* Portfolio v2: small motion, with visible content as the default. */
+:focus-visible {
+  outline: 3px solid #000;
+  outline-offset: 5px;
+}
+
+.nav-toggle { display: none; }
+.nav-toggle:focus-visible + .hamburger {
+  outline: 3px solid #000;
+  outline-offset: 3px;
+}
+
+.main-page .playground-title { isolation: isolate; }
+.main-page .project { min-width: 0; }
+.main-page .contact form { min-width: 0; width: 100%; }
+.main-page .contact input,
+.main-page .contact textarea { font: inherit; width: 100%; }
+.main-page .contact textarea { min-height: 8rem; resize: vertical; }
+.about-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .main-page .playground-title {
+    animation: heroEntrance 650ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .main-page .highlight-link::after { animation-delay: 180ms; }
+  .reveal-ready {
+    opacity: 0;
+    translate: 0 14px;
+    transition: opacity 550ms ease, translate 550ms cubic-bezier(0.22, 1, 0.36, 1),
+      transform 250ms ease, box-shadow 250ms ease;
+  }
+  .reveal-ready.is-visible,
+  .reveal-ready:focus-within { opacity: 1; translate: 0 0; }
+}
+
+@keyframes heroEntrance {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 64rem) {
+  header nav ul { margin-right: 0; gap: 2rem; }
+  .about { padding: 4rem 2rem; gap: 2.5rem; }
+}
+
+@media (max-width: 48rem) {
+  .nav-toggle { display: block; }
+  header { min-height: 4.5rem; justify-content: center; }
+  header .logo { margin-left: 0; }
+  .hamburger {
+    top: 0.85rem; right: 1rem;
+    min-width: 44px; min-height: 44px;
+    text-align: center; line-height: 44px;
+  }
+  .mobile-menu { top: 100%; right: 1rem; min-width: 10rem; }
+  .mobile-menu a { display: block; }
+  .main-page .hero { padding: 4rem 1rem; }
+  .main-page .hero h1 { font-size: clamp(1.35rem, 5.5vw, 1.75rem); }
+  .main-page .contact { flex-direction: column; gap: 1.5rem; padding: 3rem 1.25rem; }
+  .main-page .contact-info { min-width: 0; }
+  .main-page .contact-info h2 { margin-top: 0; }
+  .main-page .contact form { max-width: none; flex: auto; }
+  .about-links { justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .playground-title .highlight-link::after { width: 100%; }
+  .reveal-ready { opacity: 1; translate: none; }
+  .project:hover { transform: none; }
 }
